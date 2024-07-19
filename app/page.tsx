@@ -8,7 +8,7 @@ export default function Home() {
   const [search, setSearch] = useState("");
   
   useEffect(() => {
-    axios.get("http://localhost:3000/api/posts").then((res) => {
+    axios.get("http://localhost:3001/api/posts").then((res) => {
       setArticles(res?.data?.resposne);
     });
   }, []);
