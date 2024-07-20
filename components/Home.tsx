@@ -37,7 +37,7 @@ const Home = () => {
           }}
         />
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 px-52 py-6 overflow-auto">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 px-52 pt-8 pb-32 overflow-auto  ">
         {articles?.length === 0 ? (
           <div className="flex justify-center align-middle">
             <h1 className="text-center">No Data Found..</h1>
@@ -45,7 +45,7 @@ const Home = () => {
         ) : (
           articles?.map((data: any, index: any) => {
             return (
-              <div className="border border-gray-200 p-4" key={index}>
+              <div className="border border-gray-200 p-4 overflow-auto" key={index}>
                 <img
                   className="w-full h-48 object-cover mb-4"
                   src={data?.image}
