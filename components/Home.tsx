@@ -16,7 +16,7 @@ const Home = () => {
     } else {
       axios.get("http://localhost:3000/api/posts").then((res) => {
         setArticles(res?.data?.resposne);
-      });
+      }); 
     }
   }, [search]);
 
